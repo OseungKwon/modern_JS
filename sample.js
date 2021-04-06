@@ -1,2 +1,3 @@
-const merged = {...{x:1,y:2},...{y:10,z:3}};
-console.log(merged);
+const arr = [1, 2, 3];
+const [one, two, three] = arr;
+console.log(one, two, three);
