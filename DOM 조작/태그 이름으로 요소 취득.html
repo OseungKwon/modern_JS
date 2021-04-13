@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li id="apple">Apple</li>
+        <li id="banana">Banana</li>
+        <li id="orange">Orange</li>
+    </ul>
+    <script>
+        const $elems = document.getElementsByTagName('li');
+        [...$elems].forEach(elem=>{elem.style.color='red'});
+        //스프레드 문법 + forEach(): 배열 내부 요소 순회
+    </script>
+</body>
+</html>

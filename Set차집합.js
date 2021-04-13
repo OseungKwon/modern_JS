@@ -1,6 +1,6 @@
-Set.prototype.difference = function(set){
+Set.prototype.difference = function (set) {
     const result = new Set(this);
-    for(const value of set){
+    for (const value of set) {
         result.delete(value);
     }
     return result;
