@@ -1,0 +1,20 @@
+<!--이벤트 핸들러 어트리뷰트 방식으로 등록한 이벤트 핸들러-->
+<html>
+    <body>
+        <input type="text">
+        <input type="checkbox">
+        <button>click me!</button>
+    </body>
+    <script>
+        const $input = document.querySelector('input[type=text]');
+        const $checkbox = document.querySelector('input[type=checkbox]');
+        const $button = document.querySelector('button');
+
+        window.onload = console.log;
+        $checkbox.onchange = console.log; //change 이벤트
+        $input.onfocus = console.log; // input에 focus 할 경우
+        $input.oninput = console.log; // input에 값을 input
+        $input.onkeyup = console.log; // input 안에서 누르고 있던 키를 놓았을 때
+        $button.onclick = console.log; // 버튼 클릭 시 발생
+    </script>
+</html>
