@@ -1,38 +1,14 @@
 <!DOCTYPE html>
 <head>
     <style>
-        .box{
-            width: 100px; height: 100px;
-            background-color: #fff700;
-            border: 5px solid orange;
-            cursor: pointer;
-        }
+        
     </style>
 </head>
 <html>
     <body>
-        <div class="box"></div>
+        
     </body>
     <script>
-        const $box = document.querySelector('.box');
-        const initailMousePos = {x:0,y:0}; // initailMousePos: 드래그 시작 시점 마우스 포인터 위치
-        const offset = {x:0,y:0}; // offset: 이동할 거리
-
-        const move = e =>{
-            offset.x = e.clientX - initailMousePos.x;
-            offset.y = e.clientY - initailMousePos.y;
-            $box.style.transform = `translate3d(${offset.x}px, ${offset.y}px, 0)`;
-        }
-        $box.addEventListener('mousedown', e=>{ // 버튼 누를 때
-            initailMousePos.x = e.clientX - offset.x;
-            initailMousePos.y = e.clientY - offset.y;
-
-            document.addEventListener('mousemove',move);
-        });
-        document.addEventListener('mouseup',()=>{ // 버튼 놓았을 때
-            document.removeEventListener('mousemove',move);
-            console.log(`${initailMousePos.x}, ${initailMousePos.y}`);
-        });
         
     </script>
 </html>
