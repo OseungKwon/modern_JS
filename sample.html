@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<head>
-    <style>
-        
-    </style>
-</head>
 <html>
     <body>
-        
+        <button>Click me!</button>
+        <script>
+            const $button = document.querySelector('button');
+            const handleClick = () => {
+                console.log('button click');
+            }
+            $button.addEventListener('click', handleClick);
+
+            $button.removeEventListener('click', handleClick, true);
+            $button.removeEventListener('click', handleClick);
+        </script>
     </body>
-    <script>
-        
-    </script>
 </html>
